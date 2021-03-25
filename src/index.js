@@ -1,2 +1,2 @@
 require('module-alias/register');
-require('./app.js');
+require('./app');

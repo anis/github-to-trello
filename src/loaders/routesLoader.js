@@ -1,7 +1,12 @@
-const defaultRoutes = require('@src/routes');
+const routes = require('@src/routes');
 
-module.exports = (app, routes = defaultRoutes) => {
-    Object.values(routes).forEach(({ method, route, handlers }) => {
-        app[method](route, handlers);
-    });
-};
+function factory({ routes }) {
+    return (app) => {
+        Object.values(routes).forEach(({ method, route, handlers }) => {
+            app[method](route, handlers);
+        });
+    };
+}
+
+module.exports = factory({ routes });
+module.exports.factory = factory;

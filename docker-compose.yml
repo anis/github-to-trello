@@ -6,6 +6,8 @@ services:
       context: .
       target: development
     command: yarn start
+    env_file:
+      - .env
     ports:
       - 8181:80
     volumes:
