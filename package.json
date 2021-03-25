@@ -1,0 +1,17 @@
+{
+    "name": "github-to-trello",
+    "version": "0.0.1",
+    "main": "src/index.js",
+    "repository": "git@github.com:anis/github-to-trello.git",
+    "author": "Anis Safine Laget <anis@users.noreply.github.com>",
+    "license": "GPL-3.0+",
+    "private": false,
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.7"
+    },
+    "scripts": {
+        "start": "nodemon src/index.js"
+    }
+}
