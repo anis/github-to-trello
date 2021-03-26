@@ -7,4 +7,3 @@ fs
     .forEach((file) => {
         module.exports[file.replace('.js', '')] = require(path.join(__dirname, file));
     });
-
